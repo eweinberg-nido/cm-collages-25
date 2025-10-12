@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cm-collages-25/static/css/main.61b2cf81.css",
+    "main.js": "/cm-collages-25/static/js/main.85fd7e7a.js",
+    "static/js/453.72b4ae0d.chunk.js": "/cm-collages-25/static/js/453.72b4ae0d.chunk.js",
+    "index.html": "/cm-collages-25/index.html",
+    "main.61b2cf81.css.map": "/cm-collages-25/static/css/main.61b2cf81.css.map",
+    "main.85fd7e7a.js.map": "/cm-collages-25/static/js/main.85fd7e7a.js.map",
+    "453.72b4ae0d.chunk.js.map": "/cm-collages-25/static/js/453.72b4ae0d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.61b2cf81.css",
+    "static/js/main.85fd7e7a.js"
+  ]
+}
