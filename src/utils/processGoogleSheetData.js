@@ -10,6 +10,8 @@ export function processGoogleSheetData(sheetData) {
         entry.URL3 || '',
         entry.URL4 || '',
         entry.URL5 || '',
+        entry.URL6 || '',
+        entry.URL7 || '',
       ];
   
       // Ensure the number of URLs matches the number of names

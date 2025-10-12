@@ -1,5 +1,5 @@
 {
-  "name": "cm-collages-24",
+  "name": "cm-collages-25",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,7 +14,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://eweinberg-nido.github.io/cm-collages-24",
+  "homepage": "https://eweinberg-nido.github.io/cm-collages-25",
 
   "scripts": {
     "start": "react-scripts start",

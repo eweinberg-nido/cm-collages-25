@@ -2,7 +2,7 @@
 import Papa from 'papaparse';
 
 export async function fetchGoogleSheetData() {
-    const url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQz-ucQl3DrlNFuo4UrsqL6sdbq4ic4bYO6FfRndy2SqJudpw7bebCTTPJICXRjyE6t2yybkEBdsxpP/pub?output=csv';
+    const url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTaF_vXT17JoVi1DgIOnItEOq4vc3yP9uL5c-1Qd5ras8CJ3MKsE5JxWbJBdW9LAyAVTPB34hiGL7Ka/pub?output=csv';
   
     
   try {
