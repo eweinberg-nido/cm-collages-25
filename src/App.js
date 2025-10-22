@@ -6,21 +6,10 @@ import './App.css';
 import { fetchGoogleSheetData } from './utils/fetchGoogleSheet';
 import { processGoogleSheetData } from './utils/processGoogleSheetData';
 import { Nav } from 'react-bootstrap';
-import Login from './components/Login';
-import { getAuth, onAuthStateChanged } from 'firebase/auth';
 
 function App() {
   const [groupData, setGroupData] = useState([]);
   const [activeKey, setActiveKey] = useState('');
-  const [user, setUser] = useState(null);
-  const auth = getAuth();
-
-  useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (user) => {
-      setUser(user);
-    });
-    return () => unsubscribe();
-  }, [auth]);
 
   useEffect(() => {
     async function loadData() {
@@ -44,10 +33,6 @@ function App() {
 
   return (
     <div className="container mt-5">
-      <div className="d-flex justify-content-between align-items-center mb-3">
-        <h1>CM Collages</h1>
-        <Login user={user} setUser={setUser} />
-      </div>
       <Nav variant="pills" activeKey={activeKey} onSelect={(k) => setActiveKey(k)} className="mb-3">
         {teachers.map(teacher => (
           <Nav.Item key={teacher}>
@@ -56,7 +41,7 @@ function App() {
         ))}
       </Nav>
       {filteredData.map((group, index) => (
-        <GroupSection key={index} group={group} user={user} />
+        <GroupSection key={index} group={group} />
       ))}
     </div>
   );

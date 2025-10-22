@@ -1,9 +1,8 @@
 // src/components/GroupSection.js
 import React from 'react';
 import InteractiveCard from './InteractiveCard';
-import FeedbackForm from './FeedbackForm';
 
-function GroupSection({ group, user }) {
+function GroupSection({ group }) {
   const { title, names, links } = group;
 
   return (
@@ -18,7 +17,6 @@ function GroupSection({ group, user }) {
           </div>
         ))}
       </div>
-      {user && <FeedbackForm group={group} user={user} sheetId="1b4D8k7OcFj4tKNaTP1DuWHmeUHYPSxfS68FgU_INbPU" />}
     </div>
   );
 }
